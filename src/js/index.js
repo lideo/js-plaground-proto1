@@ -7,6 +7,7 @@ import '../sass/main.scss';
 const playgroundEditor = createEditor(document.getElementById('editor'), executeCode);
 const playgroundConsole = createConsole();
 
+// TODO: rewrite all the rest of the console methods
 (function() {
   const proxiedLog = console.log;
   console.log = function(message) {
