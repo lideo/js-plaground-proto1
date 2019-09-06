@@ -1,6 +1,7 @@
 # JS Playground Prototype #1
 
 Yet another in-browser JS playground built on top of CodeMirror editor.
+Doesn't do much.
 
 ## Command list
 
