@@ -7,29 +7,7 @@ import 'codemirror/theme/monokai.css';
 import 'codemirror/lib/codemirror.css';
 
 const createEditor = function (container, onSave) {
-  const initialCode = "" +
-    "/***********" +
-    "\n*" +
-    "\n* Happy coding!! " +
-    "\n*" +
-    "\n/***********/" +
-    "\n\n" +
-    "\nfunction sum(a, b) {" +
-    "\n    return a + b;" +
-    "\n}" +
-    "\n" +
-    "\nconst result1 = sum(1, 2);" +
-    "\nconst result2 = sum(345, 22);" +
-    "\nconst result3 = sum(-110, 5);" +
-    "\n" +
-    "\nconsole.log(result1); " +
-    "\nconsole.log(result2); " +
-    "\nconsole.log(result3); " +
-    "\nconsole.error('Hi!'); " +
-    "\n";
-
-  const editor = CodeMirror(container, {
-    value: initialCode,
+  const editor = CodeMirror.fromTextArea(container, {
     mode:  "javascript",
     lineNumbers: true,
     styleActiveLine: true,

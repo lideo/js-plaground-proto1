@@ -4,7 +4,7 @@ import createConsole from "./playgroundConsole";
 
 import '../sass/main.scss';
 
-const playgroundEditor = createEditor(document.getElementById('editor'), executeCode);
+const playgroundEditor = createEditor(document.getElementById('code'), executeCode);
 const playgroundConsole = createConsole();
 
 // TODO: rewrite all the rest of the console methods
