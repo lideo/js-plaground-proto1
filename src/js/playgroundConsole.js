@@ -1,5 +1,5 @@
 const createConsole = function() {
-  const consoleEl = document.querySelector('#console');
+  const consoleEl = document.querySelector('#console .console-output');
 
   const scrollToBottom = function(el) {
     el.scrollTop = el.scrollHeight;
@@ -10,8 +10,9 @@ const createConsole = function() {
   }
 
   const write = message => {
-    const node = document.createElement('p');
-    node.innerHTML = message;
+    const node = document.createElement('div');
+    node.className = 'console-line';
+    node.innerHTML = `<p><span>></span> ${message}</p>`;
     consoleEl.appendChild(node);
     scrollToBottom(consoleEl);
   }

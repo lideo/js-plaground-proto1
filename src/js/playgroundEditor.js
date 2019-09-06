@@ -3,18 +3,30 @@ import 'codemirror/mode/javascript/javascript';
 import 'codemirror/addon/selection/active-line';
 import 'codemirror/addon/edit/matchbrackets';
 import 'codemirror/addon/edit/closebrackets.js'
-import 'codemirror/theme/oceanic-next.css';
+import 'codemirror/theme/monokai.css';
 import 'codemirror/lib/codemirror.css';
 
 const createEditor = function (container, onSave) {
+  const initialCode = "" +
+    "/***********" +
+    "\n*" +
+    "\n* Happy coding!! " +
+    "\n*" +
+    "\n/***********/" +
+    "\n\n\n" +
+    "var a = 42; " +
+    "\nconsole.log(a); " +
+    "\nconsole.error('error!!!'); " +
+    "\n";
+
   const editor = CodeMirror(container, {
-    value: "var a = 42;\n console.log(a); console.error('error!!!');\n",
+    value: initialCode,
     mode:  "javascript",
     lineNumbers: true,
     styleActiveLine: true,
     matchBrackets: true,
     autoCloseBrackets: true,
-    theme: 'oceanic-next',
+    theme: 'monokai',
     gutter: true,
     lineWrapping: true,
   });
