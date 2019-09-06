@@ -1,6 +1,23 @@
-# Webpack starter
+# JS Playground Prototype #1
 
-Simple custom webpack starter template.
+Yet another JS browser code playground built on top of CodeMirror editor.
+
+## Command list
+
+Build for development:
+```
+npm run dev
+```
+
+Watch for changes and serve for development:
+```
+npm run watch
+```
+
+Build for production:
+```
+npm run build
+```
 
 ## Plugins & packages
 
@@ -31,3 +48,8 @@ Simple custom webpack starter template.
 * css-loader
 * postcss-loader (with autoprefixer)
 * sass-loader
+
+### CSS
+
+* css-loader
+* postcss-loader (with autoprefixer)
