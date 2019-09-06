@@ -13,10 +13,19 @@ const createEditor = function (container, onSave) {
     "\n* Happy coding!! " +
     "\n*" +
     "\n/***********/" +
-    "\n\n\n" +
-    "var a = 42; " +
-    "\nconsole.log(a); " +
-    "\nconsole.error('error!!!'); " +
+    "\n\n" +
+    "\nfunction sum(a, b) {" +
+    "\n    return a + b;" +
+    "\n}" +
+    "\n" +
+    "\nconst result1 = sum(1, 2);" +
+    "\nconst result2 = sum(345, 22);" +
+    "\nconst result3 = sum(-110, 5);" +
+    "\n" +
+    "\nconsole.log(result1); " +
+    "\nconsole.log(result2); " +
+    "\nconsole.log(result3); " +
+    "\nconsole.error('Hi!'); " +
     "\n";
 
   const editor = CodeMirror(container, {
