@@ -20,23 +20,6 @@ Build for production:
 npm run build
 ```
 
-## Command list
-
-Build for development:
-```
-npm run dev
-```
-
-Watch for changes and serve for development:
-```
-npm run watch
-```
-
-Build for production:
-```
-npm run build
-```
-
 ## Plugins & packages
 
 * [html-webpack-plugin](https://github.com/jantimon/html-webpack-plugin) for creating HTML files to serve your bundles.
