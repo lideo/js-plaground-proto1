@@ -112,7 +112,7 @@ module.exports = {
         })
     ],
     optimization: {
-        minimize: true,
+        minimize: devMode ? false : true,
         minimizer: [
             new TerserPlugin(),
             new OptimizeCSSAssetsPlugin({})
