@@ -72,6 +72,12 @@ body {
         span {
             color: rgba(0, 0, 0, 1);
         }
+        span.level::before {
+            content: '[';
+        }
+        span.level::after {
+            content: ']';
+        }
     }
 
     &:nth-child(odd) {
@@ -80,5 +86,15 @@ body {
         p span {
             color: rgba(0, 0, 0, 0.5);
         }
+    }
+
+    &.info {
+        background-color: rgba(0,0,255, 0.15);
+    }
+    &.warn {
+        background-color: rgba(255,165,0, 0.15);
+    }
+    &.error {
+        background-color: rgba(255,0,0, 0.15);
     }
 }
