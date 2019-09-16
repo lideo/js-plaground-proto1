@@ -18,7 +18,7 @@ npm run watch
 
 Build for production:
 ```
-npm run build
+npm run prod
 ```
 
 ## Plugins & packages
