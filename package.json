@@ -5,7 +5,7 @@
   "author": "Lide O.",
   "private": true,
   "scripts": {
-    "build": "NODE_ENV=production webpack",
+    "prod": "NODE_ENV=production webpack",
     "dev": "NODE_ENV=development webpack",
     "watch": "NODE_ENV=development webpack --watch"
   },
