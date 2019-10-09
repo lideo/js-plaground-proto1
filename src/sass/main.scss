@@ -26,6 +26,10 @@ body {
     background: #272822;
     color: #f8f8f2;
     border-left: 1px solid rgba(0, 0, 0, 0.3);
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15% 1fr;
 }
 
 .console-instructions {
