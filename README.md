@@ -1,6 +1,8 @@
 # JS Playground Prototype #1
 
-Yet another in-browser JS playground built on top of CodeMirror editor. Doesn't do much yet.
+Yet another in-browser JS playground built on top of CodeMirror editor. This is work in progress so it doesn't do much yet. 
+
+Check out the [demo](https://trusting-keller-1b1632.netlify.com/).
 
 ![JS Playground Prototype #1](./screenshot.png)
 
