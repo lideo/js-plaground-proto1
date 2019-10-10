@@ -1,0 +1,21 @@
+.editor-area {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    background: #272822;
+    color: #f8f8f2;
+}
+
+.preview-area {
+    border-left: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.code-container:first-of-type {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+}

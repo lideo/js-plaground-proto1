@@ -107,6 +107,12 @@ module.exports = {
             filename: "htmlcss.html",
             hash: devMode ? false : true
         }),
+        new HtmlWebPackPlugin({
+            chunks: ['preview'],
+            template: "./src/preview.html",
+            filename: "preview.html",
+            hash: devMode ? false : true
+        }),
         new MiniCssExtractPlugin({
             filename: "css/[name].css",
         }),

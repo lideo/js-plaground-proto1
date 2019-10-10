@@ -1,0 +1,19 @@
+:root {
+    --font-family: 'Source Code Pro', monospace;
+}
+
+html {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+    font-family: var(--font-family);
+}
+
+.playground-area {
+    height: 100vh;
+}
